@@ -20,7 +20,7 @@ end
 group :development, :test do
  
   gem 'byebug', platform: :mri
-  gem 'sqlite'
+  gem 'sqlite3'
 
 end
 

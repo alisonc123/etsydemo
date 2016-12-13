@@ -13,9 +13,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'paperclip', github: 'thoughtbot/paperclip' 
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 group :development, :test do
  
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
+
 end
 
 group :development do
@@ -27,5 +34,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :doc do
+  gem 'sdoc', require: false
+end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+

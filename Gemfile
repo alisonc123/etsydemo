@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.3.0"
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
@@ -10,7 +10,9 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.0.3.0'
-gem 'paperclip', github: 'thoughtbot/paperclip' 
+gem "paperclip", "~> 3.0"
+gem "paperclip-dropbox", ">= 1.1.7"
+gem "figaro"
 
 group :production do
   gem 'pg'
